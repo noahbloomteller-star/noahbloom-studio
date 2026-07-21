@@ -4,7 +4,14 @@
   "private": true,
   "sideEffects": false,
   "exports": {
-    ".": "./src/index.ts",
-    "./tokens": "./src/tokens/index.ts"
+    ".": {
+      "types": "./src/index.ts",
+      "default": "./src/index.ts"
+    },
+    "./tokens": {
+      "types": "./src/tokens/index.ts",
+      "default": "./src/tokens/index.ts"
+    },
+    "./styles.css": "./src/styles.css"
   }
 }

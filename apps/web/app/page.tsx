@@ -1,34 +1,43 @@
-import { colors, typography } from "@noahbloom/design-system";
+import { Button } from "@noahbloom/ui";
 
 export default function Home() {
   return (
     <main
       style={{
-        minHeight: "100vh",
-        backgroundColor: colors.background.primary,
-        color: colors.foreground.primary,
         padding: "4rem",
-        fontFamily: typography.fontFamily.sans,
+        display: "flex",
+        flexDirection: "column",
+        gap: "1rem",
+        alignItems: "flex-start",
       }}
     >
-      <h1
-        style={{
-          color: colors.brand.green,
-          fontSize: typography.fontSize["4xl"],
-          fontWeight: typography.fontWeight.bold,
-        }}
-      >
-        Noah Bloom Studio
-      </h1>
+      <h1>Noah Bloom Studio</h1>
 
-      <p
-        style={{
-          color: colors.foreground.secondary,
-          fontSize: typography.fontSize.lg,
-        }}
-      >
-        Design System connected successfully.
-      </p>
+      <p>Design System and UI package connected successfully.</p>
+
+      <Button>
+        Primary Button
+      </Button>
+
+      <Button variant="secondary">
+        Secondary Button
+      </Button>
+
+      <Button variant="ghost">
+        Ghost Button
+      </Button>
+
+      <Button size="sm">
+        Small Button
+      </Button>
+
+      <Button size="lg">
+        Large Button
+      </Button>
+
+      <Button disabled>
+        Disabled Button
+      </Button>
     </main>
   );
 }

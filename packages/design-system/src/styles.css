@@ -1,0 +1,53 @@
+:root {
+  --color-background-primary: #fffdf9;
+  --color-background-secondary: #f7f4ee;
+  --color-background-inverse: #101510;
+
+  --color-foreground-primary: #151815;
+  --color-foreground-secondary: #59605a;
+  --color-foreground-muted: #858b85;
+  --color-foreground-inverse: #ffffff;
+
+  --color-surface-primary: #ffffff;
+  --color-surface-secondary: #f7f4ee;
+  --color-surface-elevated: #ffffff;
+
+  --color-border-subtle: #e8e5de;
+  --color-border-default: #d8d5cd;
+  --color-border-strong: #b8b5ad;
+
+  --color-accent-primary: #f28c28;
+  --color-accent-secondary: #5f7f67;
+
+  --color-status-success: #5f7f67;
+  --color-status-warning: #f28c28;
+  --color-status-error: #c83b32;
+}/* Typography */
+
+:root {
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-md: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 2rem;
+  --font-size-4xl: 2.75rem;
+  --font-size-5xl: 3.75rem;
+  --font-size-6xl: 5rem;
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  --line-height-tight: 1.1;
+  --line-height-snug: 1.25;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.7;
+
+  --letter-spacing-tight: -0.03em;
+  --letter-spacing-normal: 0;
+  --letter-spacing-wide: 0.04em;
+  --letter-spacing-wider: 0.08em;
+}
