@@ -1,0 +1,16 @@
+{
+  "name": "noahbloom-studio",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "pnpm --filter web dev",
+    "build": "pnpm --filter web build",
+    "start": "pnpm --filter web start",
+    "lint": "pnpm --filter web lint",
+    "typecheck": "pnpm --filter web exec tsc --noEmit"
+  },
+  "packageManager": "pnpm@10.13.1",
+  "devDependencies": {
+    "turbo": "^2.10.5"
+  }
+}
