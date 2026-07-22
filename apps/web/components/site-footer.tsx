@@ -1,53 +1,100 @@
 import Link from "next/link";
 
-import { Container } from "@noahbloom/ui";
+import {
+  Container,
+  Section,
+  Stack,
+} from "@noahbloom/ui";
 
 import "./site-footer.css";
+
+const footerLinks = [
+  {
+    label: "Home",
+    href: "/",
+  },
+  {
+    label: "Work",
+    href: "/work",
+  },
+  {
+    label: "About",
+    href: "/about",
+  },
+  {
+    label: "Contact",
+    href: "/contact",
+  },
+];
 
 export function SiteFooter() {
   return (
     <footer className="site-footer">
-      <Container>
-        <div className="site-footer__content">
-          <div className="site-footer__brand">
-            <Link
-              href="/"
-              className="site-footer__logo"
+      <Section className="site-footer__cta">
+        <Container>
+          <Stack gap="lg">
+            <div className="site-footer__cta-content">
+              <Stack gap="md">
+                <p className="site-footer__eyebrow">
+                  Have a project in mind?
+                </p>
+
+                <h2 className="site-footer__title">
+                  Let&apos;s make something
+                  meaningful together.
+                </h2>
+
+                <p className="site-footer__description">
+                  We&apos;d love to hear about your idea,
+                  challenge, or next big thing.
+                </p>
+
+                <Link
+                  href="/contact"
+                  className="site-footer__cta-link"
+                >
+                  Start a conversation
+                </Link>
+              </Stack>
+            </div>
+          </Stack>
+        </Container>
+      </Section>
+
+      <div className="site-footer__bottom">
+        <Container>
+          <div className="site-footer__bottom-inner">
+            <div className="site-footer__brand">
+              <Link
+                href="/"
+                className="site-footer__brand-link"
+              >
+                Noah Bloom Studio
+              </Link>
+
+              <p className="site-footer__copyright">
+                © {new Date().getFullYear()} Noah Bloom Studio.
+                All rights reserved.
+              </p>
+            </div>
+
+            <nav
+              className="site-footer__nav"
+              aria-label="Footer navigation"
             >
-              Noah Bloom Studio
-            </Link>
-
-            <p className="site-footer__description">
-              Thoughtful digital experiences,
-              built with intention.
-            </p>
+              {footerLinks.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className="site-footer__nav-link"
+                >
+                  {link.label}
+                </Link>
+              ))}
+            </nav>
           </div>
-
-          <nav
-            className="site-footer__links"
-            aria-label="Footer navigation"
-          >
-            <Link href="/work">
-              Work
-            </Link>
-
-            <Link href="/about">
-              About
-            </Link>
-
-            <Link href="/contact">
-              Contact
-            </Link>
-          </nav>
-        </div>
-
-        <div className="site-footer__bottom">
-          <p>
-            © {new Date().getFullYear()} Noah Bloom Studio.
-            All rights reserved.
-          </p>
-        </div>
-      </Container>
+        </Container>
+      </div>
     </footer>
   );
 }
