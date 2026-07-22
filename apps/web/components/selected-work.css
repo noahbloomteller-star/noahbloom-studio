@@ -1,0 +1,126 @@
+.selected-work {
+  padding-block: 8rem;
+  background: var(--color-background-secondary);
+}
+
+.selected-work__intro {
+  max-width: 42rem;
+}
+
+.selected-work__eyebrow {
+  margin: 0;
+  color: var(--color-accent-primary);
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.selected-work__title {
+  margin: 0;
+  color: var(--color-foreground-primary);
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  font-weight: 600;
+  letter-spacing: -0.04em;
+  line-height: 1;
+}
+
+.selected-work__description {
+  max-width: 36rem;
+  margin: 0;
+  color: var(--color-foreground-secondary);
+  font-family: var(--font-sans);
+  font-size: 1.125rem;
+  line-height: 1.7;
+}
+
+.selected-work__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem;
+}
+
+.selected-work__card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.selected-work__card:nth-child(3) {
+  grid-column: 1 / -1;
+}
+
+.selected-work__visual {
+  aspect-ratio: 16 / 10;
+  display: flex;
+  align-items: flex-end;
+  padding: 1.5rem;
+  border-radius: 1.25rem;
+  background:
+    linear-gradient(
+      135deg,
+      var(--color-accent-primary),
+      var(--color-accent-secondary)
+    );
+  color: var(--color-foreground-inverse);
+}
+
+.selected-work__visual span {
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.selected-work__category {
+  margin: 0;
+  color: var(--color-foreground-muted);
+  font-family: var(--font-sans);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.selected-work__card-title {
+  max-width: 32rem;
+  margin: 0;
+  color: var(--color-foreground-primary);
+  font-family: var(--font-display);
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+}
+
+.selected-work__card-description {
+  max-width: 32rem;
+  margin: 0;
+  color: var(--color-foreground-secondary);
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.selected-work__action {
+  display: flex;
+  justify-content: flex-start;
+}
+
+@media (max-width: 768px) {
+  .selected-work {
+    padding-block: 5rem;
+  }
+
+  .selected-work__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .selected-work__card:nth-child(3) {
+    grid-column: auto;
+  }
+}
