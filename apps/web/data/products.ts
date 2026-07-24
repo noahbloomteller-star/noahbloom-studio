@@ -5,7 +5,7 @@ export type Product = {
   collection: string;
   description: string;
   details: string;
-  variant: string;
+  image: string;
   marketplaceUrl: string;
 };
 
@@ -19,7 +19,7 @@ export const products: Product[] = [
       "A bold dance-inspired design celebrating rhythm, movement, and individuality.",
     details:
       "Created for people who feel most at home when music starts playing. A graphic statement inspired by dance, rhythm, and creative energy.",
-    variant: "rhythm",
+    image: "/images/products/raised-on-rhythm.webp",
     marketplaceUrl: "#",
   },
   {
@@ -31,7 +31,7 @@ export const products: Product[] = [
       "A joyful design inspired by movement, creativity, and the simple happiness of dancing.",
     details:
       "A playful expression of joy and movement, created for anyone who believes that happiness can be found in the rhythm of everyday life.",
-    variant: "dancing",
+    image: "/images/products/joy-looks-like-dancing.webp",
     marketplaceUrl: "#",
   },
   {
@@ -43,7 +43,7 @@ export const products: Product[] = [
       "A thoughtful reminder to keep moving forward, one step and one moment at a time.",
     details:
       "A minimal and thoughtful design inspired by patience, progress, and the idea that every meaningful journey begins with a single step.",
-    variant: "step",
+    image: "/images/products/one-step-at-a-time.webp",
     marketplaceUrl: "#",
   },
   {
@@ -55,7 +55,7 @@ export const products: Product[] = [
       "A gentle reminder that growth takes time and every journey unfolds at its own pace.",
     details:
       "A calm and encouraging design inspired by personal growth, patience, and the beauty of becoming who you are meant to be.",
-    variant: "bloom",
+    image: "/images/products/bloom-slowly.webp",
     marketplaceUrl: "#",
   },
 ];

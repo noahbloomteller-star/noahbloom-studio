@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 import "./product-card.css";
@@ -7,7 +8,7 @@ type ProductCardProps = {
   category: string;
   description: string;
   href: string;
-  variant: string;
+  image: string;
 };
 
 export function ProductCard({
@@ -15,20 +16,18 @@ export function ProductCard({
   category,
   description,
   href,
-  variant,
+  image,
 }: ProductCardProps) {
   return (
     <article className="product-card">
-      <div
-        className={`product-card__image product-card__image--${variant}`}
-      >
-        <span className="product-card__image-label">
-          {category}
-        </span>
-
-        <span className="product-card__image-title">
-          {title}
-        </span>
+      <div className="product-card__image">
+        <Image
+          src={image}
+          alt={title}
+          fill
+          sizes="(max-width: 768px) 100vw, 50vw"
+          className="product-card__image-element"
+        />
       </div>
 
       <div className="product-card__content">

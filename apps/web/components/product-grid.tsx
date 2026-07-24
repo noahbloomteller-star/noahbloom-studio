@@ -14,7 +14,7 @@ export function ProductGrid() {
           category={product.category}
           description={product.description}
           href={`/work/t-shirt-designs/${product.slug}`}
-          variant={product.variant}
+          image={product.image}
         />
       ))}
     </div>

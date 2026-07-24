@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 import {
@@ -54,16 +55,15 @@ export default async function ProductPage({
       <Section className="product-page">
         <Container>
           <div className="product-page__layout">
-            <div
-              className={`product-page__visual product-page__visual--${product.variant}`}
-            >
-              <span className="product-page__visual-category">
-                {product.category}
-              </span>
-
-              <h1 className="product-page__visual-title">
-                {product.title}
-              </h1>
+            <div className="product-page__visual">
+              <Image
+                src={product.image}
+                alt={product.title}
+                width={1600}
+                height={2000}
+                className="product-page__image"
+                priority
+              />
             </div>
 
             <div className="product-page__content">
