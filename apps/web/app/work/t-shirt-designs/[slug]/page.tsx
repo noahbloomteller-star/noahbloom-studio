@@ -7,6 +7,7 @@ import {
   Stack,
 } from "@noahbloom/ui";
 
+import { RelatedProducts } from "../../../../components/related-products";
 import { products } from "../../../../data/products";
 
 import "./product-page.css";
@@ -104,6 +105,12 @@ export default async function ProductPage({
               </Stack>
             </div>
           </div>
+        </Container>
+      </Section>
+
+      <Section>
+        <Container>
+          <RelatedProducts currentSlug={product.slug} />
         </Container>
       </Section>
     </main>
