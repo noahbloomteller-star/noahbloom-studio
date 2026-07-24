@@ -6,7 +6,8 @@
 
 .hero__content {
   max-width: 52rem;
-  padding-block: 6rem;
+  padding-top: 6rem;
+  padding-bottom: 3rem;
 }
 
 .hero__eyebrow {

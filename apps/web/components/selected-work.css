@@ -1,5 +1,6 @@
 .selected-work {
-  padding-block: 8rem;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
   background: var(--color-background-secondary);
 }
 
