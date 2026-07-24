@@ -1,0 +1,50 @@
+.related-products {
+  padding-top: 2rem;
+}
+
+.related-products__header {
+  max-width: 42rem;
+  margin-bottom: 3rem;
+}
+
+.related-products__eyebrow {
+  margin: 0 0 1rem;
+  color: var(--color-accent-primary);
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.related-products__title {
+  margin: 0;
+  color: var(--color-foreground);
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  font-weight: 600;
+  letter-spacing: -0.05em;
+  line-height: 0.95;
+}
+
+.related-products__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2rem;
+}
+
+@media (max-width: 900px) {
+  .related-products {
+    padding-top: 2rem;
+  }
+
+  .related-products__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .related-products__grid {
+    grid-template-columns: 1fr;
+  }
+}
